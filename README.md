@@ -1,5 +1,5 @@
 # jswaxdispatcher
-Quickly integrate submitting WAX blockchain transactions into NodeJS projects
+Quickly integrate submitting WAX blockchain transactions in NodeJS projects
 ## Installation
 `npm i jswaxdispatcher`
 ## Usage
