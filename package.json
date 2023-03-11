@@ -1,0 +1,30 @@
+{
+  "name": "jswaxdispatcher",
+  "version": "1.0.0",
+  "description": "A package to simplify submitting actions to the WAX Blockchain in nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristoferStuart/jswaxdispatcher.git"
+  },
+  "keywords": [
+    "WAX",
+    "WAXP",
+    "NFT",
+    "blockchain",
+    "nodejs"
+  ],
+  "author": "Kristofer Stuart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KristoferStuart/jswaxdispatcher/issues"
+  },
+  "homepage": "https://github.com/KristoferStuart/jswaxdispatcher#readme",
+  "dependencies": {
+    "eosjs": "^22.1.0",
+    "node-fetch": "^2.6.9"
+  }
+}
