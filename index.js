@@ -171,15 +171,15 @@ const jswaxdispatcher = function (privateKey, walletAddress, walletPermission, c
         return result;
     };
     /**
-     * @param {number} quantity 
-     * @param {string} ticker 
-     * @param {string} tokenContractAcct 
-     * @param {string} recipient 
-     * @param {string} memo 
+     * @param {number} quantity Amount of desired token to send to the recipient
+     * @param {string} symbol The token symbol (ex: WAX, AQUA, WXBOOTY)
+     * @param {string} tokenContractAcct The address that owns the contract (ex: eosio.token)
+     * @param {string} recipient The wallet address you are sending tokens to
+     * @param {string} [memo] Memo to include with transfer.
      * @returns 
      */
-    this.sendTokens = async function (quantity, ticker, tokenContractAcct, recipient, memo) {
-        let result, qtyStr = `${quantity} ${ticker}`;
+    this.sendTokens = async function (quantity, symbol, tokenContractAcct, recipient, memo) {
+        let result, qtyStr = `${quantity} ${symbol}`;
         try {
             result = await api.transact({
                 actions: [
