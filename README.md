@@ -14,7 +14,7 @@ projectWallet.sendWax(quantity, recipient, memo) //memo optional
 ### `.sendWax( quantity, recipient , memo )`
 Send an address WAX with optional memo
 
-### `.sendToken( quantity, symbol, tokenContractAcct, recipient, memo )`
+### `.sendTokens( quantity, symbol, tokenContractAcct, recipient, memo )`
 Send an address a specified token with optional memo
 
 ### `.sendAssets( assetIds[], recipient, memo )`
