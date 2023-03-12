@@ -209,17 +209,3 @@ const jswaxdispatcher = function (privateKey, walletAddress, walletPermission, c
     };
 }
 exports.jswaxdispatcher = jswaxdispatcher
-/*
-transaction boilerplate
-
-let result;
-        try {
-            result = await api.transact({
-                actions: []
-            }, {
-                blocksBehind: 3,
-                expireSeconds: 30,
-            })
-        } catch (err) {return err}
-        return result;
-  */
