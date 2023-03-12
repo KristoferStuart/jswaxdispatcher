@@ -5,9 +5,13 @@ Quickly integrate submitting WAX blockchain transactions in NodeJS projects
 ## Usage
 ```js
 const { jswaxdispatcher } = require('jswaxdispatcher')
+<<<<<<< HEAD
 const projectWallet = new jswaxdispatcher(privateKey, walletAddress, permission, customSignatureProvider)
 //permission & customSignatureProvider optional but recommended.
 //DEFAULTS permission = 'active', customSignatureProvider = JsSignatureProvider from eosjs
+=======
+const projectWallet = new jswaxdispatcher(privateKey, walletAddress, permission, customSignatureProvider) //permission & customSignatureProvider optional but recommended.
+>>>>>>> 38118f60e302af84b6e469440d4bcc985dcaee7e
 
 projectWallet.sendWax(quantity, recipient, memo) //memo optional
     .then((res) => {console.log(res)});
