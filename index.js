@@ -7,15 +7,18 @@ const fetch = require('node-fetch')
  * @param {string} walletAddress The wax address associated with the private key. (example: i15.y.c.wam, thepixelgibs, gibbotwallet)
  * @param {*} [walletPermission="active"] The wallet's permissions. If undefined, permission is set to default string 'active'
  * @param {*} [customSignatureProvider] Your custom Signature Provider. If undefined, JsSignatureProvider is used. 
+ * @param {boolean} [testnet] Testnet switch, if true will connect to Wax Testnet If undefined or false will connect to Wax Mainnet. 
  * 
  * The Signature Provider holds private keys and is responsible for signing transactions. Using the JsSignatureProvider in the browser is not secure and should only be used for development purposes. Use a secure vault outside of the context of the webpage to ensure security when signing transactions in production
  * @returns {{sendAssets: [AsyncFunction (anonymous)], burnAssets: [AsyncFunction (anonymous)], mintFromTemplate: [AsyncFunction (anonymous)], sendWax: [AsyncFunction (anonymous)]}}
  */
-const jswaxdispatcher = function (privateKey, walletAddress, walletPermission, customSignatureProvider) {
+const jswaxdispatcher = function (privateKey, walletAddress, walletPermission, customSignatureProvider, testnet) {
     let signatureProvider;
+    let endpoint;
     (walletPermission) ? walletPermission = walletPermission : walletPermission = `active`;
     (customSignatureProvider) ? signatureProvider = customSignatureProvider : signatureProvider = new JsSignatureProvider([privateKey]);
-    const rpc = new JsonRpc('https://wax.greymass.com', { fetch });
+    (testnet) ? endpoint = 'https://wax-test.blokcrafters.io' : endpoint = 'https://wax.greymass.com';
+    const rpc = new JsonRpc(endpoint, { fetch });
     const api = new Api({ rpc, signatureProvider });
 
     /**
