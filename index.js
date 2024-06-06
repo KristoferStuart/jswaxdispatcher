@@ -174,7 +174,7 @@ const jswaxdispatcher = function (privateKey, walletAddress, walletPermission, c
         return result;
     };
     /**
-     * @param {number} quantity Amount of desired token to send to the recipient
+     * @param {string} quantity Amount of desired token to send to the recipient
      * @param {string} symbol The token symbol (ex: WAX, AQUA, WXBOOTY)
      * @param {string} tokenContractAcct The address that owns the contract (ex: eosio.token)
      * @param {string} recipient The wallet address you are sending tokens to
