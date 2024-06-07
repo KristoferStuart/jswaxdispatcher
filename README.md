@@ -1,4 +1,5 @@
-[DEPRECATED] Please use [Wharfkit](https://wharfkit.com/) for future implementation of the WAX Blockchain in your projects
+<h1>DEPRECATED]</h1>
+Please use [Wharfkit](https://wharfkit.com/) for future implementation of the WAX Blockchain in your projects
 
 # jswaxdispatcher
 Quickly integrate submitting WAX blockchain transactions in NodeJS projects
