@@ -1,4 +1,4 @@
-<h1>DEPRECATED]</h1>
+<h1>DEPRECATED</h1>
 Please use [Wharfkit](https://wharfkit.com/) for future implementation of the WAX Blockchain in your projects
 
 # jswaxdispatcher
