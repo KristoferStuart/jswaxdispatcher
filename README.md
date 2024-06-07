@@ -1,5 +1,5 @@
 <h1>DEPRECATED</h1>
-Please use <a href='https://wharfkit.com/'>Wharfkit</a> for future implementation of the WAX Blockchain in your projects
+This npm package uses the now outdated EOSJS. Please use <a href='https://wharfkit.com/'>Wharfkit</a> for future implementation of the WAX Blockchain in your projects
 
 # jswaxdispatcher
 Quickly integrate submitting WAX blockchain transactions in NodeJS projects
